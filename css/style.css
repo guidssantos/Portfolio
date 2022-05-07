@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #205375;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    background-color: #112B3C;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 2px solid rgba(0, 0, 0, .15);
+    width: 80%;
+    height: 100%;
+    padding: 25px 0;
+    border-radius: 5px;
+}
+.center_header {
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.center {
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*-- Nome --*/
+.logo p{
+    color: white;
+    float: left;
+    font-weight: bold;
+}
+
+/*-- Start List --*/
+
+.list_header {
+    float: right;
+}
+
+div.list_header li{
+    float: left;
+    padding: 0 15px;
+    list-style-type: none;
+}
+
+div.list_header a{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.list_header a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* End List */
+
+section.basic_info_bg{
+    background-color: #112B3C;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 2px solid rgba(0, 0, 0, .15);
+    width: 80%;
+    height: 100%;
+    padding: 20px 40px 10px 10px;
+    border-radius: 5px;
+    
+}
+
+/*  Infos */
+.basic_info_bg h1 {
+    color: white;
+    font-size: 34px;
+    padding-top: 5%;
+}
+
+.perfil p{
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.perfil{
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+.perfil_image{
+    width: 30%;
+}
+
+.perfil_image img {
+    max-width: 100%;
+    float: right;
+    border-radius: 50%;
+}
+
+.center_basic_info{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.perfil a{
+    padding: 5px 15px;
+    background-color: #205375; 
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/*  About_me */
+
+section.about_me_bg {
+    background-color: #112B3C;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 2px solid rgba(0, 0, 0, .15);
+    width: 80%;
+    height: 100%;
+    padding: 20px 40px 10px 10px;
+    border-radius: 5px;
+}
+
+.center_about_me{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about_me{
+    width: 70%;
+}
+
+.about_me_image{
+    width:  30%;
+}
+
+.about_me h1{
+    color: white;
+    font-size: 34px;
+    padding-bottom: 4%;
+}
+
+.about_me_image img{
+    max-width: 100%;
+    float: right;
+    border-radius: 50%;
+}
+
+.about_me p{
+    width: 500px;
+    font-size: 16px;
+    color: white;
+    text-align: justify;
+}
+
+/* Courses */
+
+.courses_bg {
+    background-color: #112B3C;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 2px solid rgba(0, 0, 0, .15);
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.course_title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.course_wrap p{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.course_wrap img{
+        display: flex;
+        margin: auto;
+}
+
+.course_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+li{
+    list-style-type: none;
+}
+
+.course_wrap li {
+    list-style-type: none;
+    width: 31%;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+    /* End Courses */
+
+    /* Start Portfolio */
+
+.portfolio_bg {
+    background-color: #112B3C;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(0, 0, 0, .15);
+    width: 80%;
+    height: 100%;
+    padding: 25px 0;
+    display: block;
+    border-radius: 5px;
+}
+
+section.portfolio_bg > h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.container-slider-single img{
+max-width: 100%;
+padding-top: 10px;
+}
+
+.container-slider-single a{
+    cursor: pointer;
+    display: block;
+}
+
+.container-slider{
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.container-slider-single{
+    float: left;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.container-slider-single p{
+    margin: 15px 0;
+    color: #7E92AC;
+    font-size: 14px;
+}
+
+.slick-slide{
+    margin-left: 27px;
+}
+
+.slick-list{
+    margin-left: -27px;
+}
+
+/* SLICK SLIDER */
+
+.slick-dotted ul{
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.slick-dotted li{
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+    outline: 0;
+}
+
+.slick-dotted li button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.slick-active button{
+    background: #373855;
+    color: #373855;
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+/* Fim slick slider */
+
+/* Start Contact */
+
+.contact_bg {
+    background-color: #112B3C;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(0, 0, 0, .15);
+    width: 80%;
+    height: 100%;
+    padding: 25px 0;
+    display: block;
+    border-radius: 5px;
+}
+
+section.contact_bg{
+    padding: 40px 0px;
+    text-align: center;
+    color: white;
+}
+
+section.contact_bg h1{
+    font-size: 50px;
+}
+
+ul.lista_wrap{
+    display: flex;
+    flex-wrap: nowrap;  
+}
+
+.lista_contatos i{
+    padding-right: 5px;
+}
+
+.lista_contatos a{
+    color: white;
+    padding-right: 10px;
+}
+
+/* section.contact_bg form{
+    width: 100%;
+}
+
+.contact_bg input[type=text],
+.contact_bg input[type=email]{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    padding-left: 10px;
+}
+
+.contact_bg textarea{
+    width: 100%;
+    height: 120px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    padding: 10px;
+    resize: vertical;
+}
+
+.contact_bg input[type=submit]{
+    width: 100%;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    border: 0px;
+    background: #255AFF;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+
+} */
+
+/* Footer */
+
+footer {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .center_header p{
+        margin-left: 150px;
+    }
+    
+    section.basic_info_bg{
+        padding: 0px;
+    }
+
+    .perfil{
+        width: 100%;
+    }
+
+   div.center_basic_info{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .perfil{
+        width: 100%;
+    }
+
+   div.center_basic_info{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    /* About_me */
+
+    section.about_me_bg{
+        padding: 0px;
+    }
+
+    .about_me{
+        width: 100%;
+    }
+
+    div.center_about_me{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .about_me p{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .course_wrap li{
+        width: 100%;
+    }
+
+
+}
