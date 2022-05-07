@@ -18,7 +18,7 @@ header{
     margin-top: 10px;
     border: 2px solid rgba(0, 0, 0, .15);
     width: 80%;
-    height: 100%;
+    height: 70px;
     padding: 25px 0;
     border-radius: 5px;
 }
@@ -178,59 +178,33 @@ section.about_me_bg {
 
 /* Courses */
 
-.courses_bg {
+.course_bg {
     background-color: #112B3C;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     border: 2px solid rgba(0, 0, 0, .15);
+    padding-bottom: 40px;
     width: 80%;
     height: 100%;
     border-radius: 5px;
 }
 
-.course_title {
+.course_bg h1{
     color: white;
     text-align: center;
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-top: 20px
 }
 
 a {
     text-decoration: none;
 }
 
-.course_wrap p{
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    padding-top: 5px;
-}
-
-.course_wrap img{
-        display: flex;
-        margin: auto;
-}
-
-.course_wrap {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
 li{
     list-style-type: none;
 }
 
-.course_wrap li {
-    list-style-type: none;
-    width: 31%;
-    margin-top: 40px;
-    margin-left: 15px;
-}
     /* End Courses */
 
     /* Start Portfolio */
@@ -298,7 +272,7 @@ padding-top: 10px;
     list-style-type: none;
     text-align: center;
     position: relative;
-    top: 30px;
+    top: 40px;
 }
 
 .slick-dotted li{
@@ -418,10 +392,61 @@ footer {
     padding-bottom: 10px;
 }
 
+.items-menu-mobile{
+    display: none;
+    width: 53%;
+    text-align: right;
+}
+
+.items-menu-mobile i{
+    color: white;
+    position: relative;
+    top: 0px;
+    left: 60%;
+    font-size: 23px;
+    cursor: pointer;
+
+}
+
 @media screen and (max-width: 768px) {
 
-    .center_header p{
-        margin-left: 150px;
+    .items-menu-mobile{
+        display: block;
+    }
+
+    .menu-mobile{
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        left: 0px;
+        top: 75px;
+        width: 100%;
+        background-color: #112B3C;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .show{
+        opacity: 1;
+    }
+
+    .hide{
+        opacity: 0;
+    }
+
+    .menu-mobile a{
+        text-align: center;
+        display: block;
+        margin:8px 0;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom: 1px solid #205375;
+        padding: 8px 0;
+    }
+
+    header .list_header{
+        display: none;
     }
     
     section.basic_info_bg{
@@ -440,20 +465,6 @@ footer {
         text-align: center;
         padding-bottom: 10px;
     }
-
-    .perfil{
-        width: 100%;
-    }
-
-   div.center_basic_info{
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 10px;
-    }
-
     /* About_me */
 
     section.about_me_bg{
@@ -482,5 +493,13 @@ footer {
         width: 100%;
     }
 
+    ul.lista_wrap{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
+    .lista_wrap li{
+        padding-top: 20px;
+        text-align: center;  
+    }
 }
