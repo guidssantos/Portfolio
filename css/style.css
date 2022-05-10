@@ -550,6 +550,7 @@ footer {
     nav.lista_wrap{
         display: flex;
         flex-wrap: wrap;
+        max-width: 120px;
     }
 
     .lista_wrap li{
