@@ -2,39 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #205375;
+    background-color: #030303;
     width: 100%;
     height: 100%;
 }
 
 header{
-    background-color: #112B3C;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+    background-color: #030303;
     border: 2px solid rgba(0, 0, 0, .15);
-    width: 80%;
-    height: 70px;
+    width: 100%;
+    height: 80px;
     padding: 25px 0;
-    border-radius: 5px;
 }
 
 .center {
     max-width: 1100px;
     padding: 0 2%;
     margin: 0 auto;
-    margin-bottom: 20px;
 }
 
-/*-- Nome --*/
+/*-- Name logo --*/
 .logo p{
     color: white;
+    font-size: 22px;
     float: left;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 /*-- Start List --*/
@@ -45,14 +42,18 @@ header{
 
 div.list_header li{
     float: left;
-    padding: 0 15px;
+    padding-left: 15px;
     list-style-type: none;
 }
 
 div.list_header a{
     color: white;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
+}
+
+.item:target{
+    transition: 2s;
 }
 
 .list_header a:hover{
@@ -61,24 +62,19 @@ div.list_header a{
 
 /* End List */
 
+/* Basic info */
+
 section.basic_info_bg{
-    background-color: #112B3C;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border: 2px solid rgba(0, 0, 0, .15);
-    width: 80%;
+    background-color: #050505;
+    width: 100%;
     height: 100%;
-    padding: 20px 40px 10px 10px;
-    border-radius: 5px;
-    
 }
 
 /*  Infos */
 .basic_info_bg h1 {
     color: white;
-    font-size: 34px;
-    padding-top: 5%;
+    font-size: 30px;
+    padding-top: 30%;
 }
 
 .perfil p{
@@ -90,18 +86,15 @@ section.basic_info_bg{
 }
 
 .perfil{
-    width: 70%;
-    padding-bottom: 30px;
+    width: 50%;
 }
 
 .perfil_image{
-    width: 30%;
+ width: 50%;
 }
 
-.perfil_image img {
-    max-width: 100%;
-    float: right;
-    border-radius: 50%;
+.perfil_image img{
+    margin-bottom: -5px;
 }
 
 .center_basic_info{
@@ -109,7 +102,6 @@ section.basic_info_bg{
     max-width: 1100px;
     padding: 0 2%;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 .perfil a{
@@ -118,21 +110,21 @@ section.basic_info_bg{
     border-radius: 5px;
     color: white;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 700;
+}
+
+.perfil a:hover{
+    margin-left: 5%;
+    font-size: 34px;
+    transition: 2s;
 }
 
 /*  About_me */
 
 section.about_me_bg {
-    background-color: #112B3C;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border: 2px solid rgba(0, 0, 0, .15);
-    width: 80%;
+    background-color: #0F0F0F;
+    width: 100%;
     height: 100%;
-    padding: 20px 40px 10px 10px;
-    border-radius: 5px;
 }
 
 .center_about_me{
@@ -140,27 +132,25 @@ section.about_me_bg {
     max-width: 1100px;
     padding: 0 2%;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 .about_me{
-    width: 70%;
+    width: 50%;
 }
 
 .about_me_image{
-    width:  30%;
+    width:  50%;
+    margin-top: -20%;
+    margin-bottom: -5px;
 }
+
 
 .about_me h1{
     color: white;
     font-size: 34px;
-    padding-bottom: 4%;
-}
-
-.about_me_image img{
-    max-width: 100%;
-    float: right;
-    border-radius: 50%;
+    padding-top: 30%;
+    padding-bottom: 5%;
+  
 }
 
 .about_me p{
@@ -173,22 +163,18 @@ section.about_me_bg {
 /* Courses */
 
 .course_bg {
-    background-color: #112B3C;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border: 2px solid rgba(0, 0, 0, .15);
+    background-color: #181818;
     padding-bottom: 40px;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    border-radius: 5px;
+    padding-top: 20px;
 }
 
 .course_bg h1{
     color: white;
     text-align: center;
     font-size: 40px;
-    margin-top: 20px
+    
 }
 
 a {
@@ -204,33 +190,38 @@ li{
     /* Start Portfolio */
 
 .portfolio_bg {
-    background-color: #112B3C;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px solid rgba(0, 0, 0, .15);
-    width: 80%;
+    background-color: #212121;
+    width: 100%;
     height: 100%;
-    padding: 25px 0;
-    display: block;
-    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
-section.portfolio_bg > h1{
+section.portfolio_bg h1{
     text-align: center;
     font-size: 50px;
     color: white;
 }
 
 .container-slider-single img{
-max-width: 100%;
-padding-top: 10px;
-}
+    max-width: 100%;
+    padding-top: 10px;
+ }
 
 .container-slider-single a{
     cursor: pointer;
     display: block;
+    color: white;
+    font-weight: 700;
+}
+
+.container-slider-single h3{
+    color: white;
+}
+
+.container-slider-single a:hover{
+    transition: 0.5s;
+    font-size: 18px;
 }
 
 .container-slider{
@@ -240,10 +231,9 @@ padding-top: 10px;
 
 .container-slider-single{
     float: left;
-    background-color: white;
+    background-color: #2b2828;
     text-align: center;
     padding: 15px;
-    border-radius: 10px;
 }
 
 .container-slider-single p{
@@ -302,13 +292,8 @@ li.slick-active button{
 /* Start Contact */
 
 .contact_bg {
-    background-color: #112B3C;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px solid rgba(0, 0, 0, .15);
-    width: 80%;
+    background-color: #0F0F0F;
+    width: 100%;
     height: 100%;
     padding: 25px 0;
     display: block;
@@ -333,6 +318,7 @@ nav.lista_wrap{
 
 .lista_contatos i{
     padding-right: 5px;
+    padding-bottom: 15px;
 }
 
 .lista_contatos a{
@@ -341,8 +327,7 @@ nav.lista_wrap{
 }
 
 .center_lista_contatos{
-max-width: 1100px;
-    padding: 0 20%;
+    max-width: 600px;
     margin: 0 auto;
  }
 
@@ -391,6 +376,18 @@ footer {
     text-align: center;
     color: white;
     padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+footer p{
+    padding-bottom: 10px;
+}
+
+.thank_you{
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #205375;
 }
 
 .items-menu-mobile{
@@ -410,9 +407,18 @@ footer {
 }
 
 
-@media screen and (max-width:1021px) {
-    section.basic_info_bg{
+@media screen and (max-width:1024px) {
+    .basic_info_bg{
         padding: 0px;
+        margin: 0px;
+    }
+    
+    .basic_info_bg h1{
+        padding: 15px;
+    }
+    
+    .perfil_image{
+        display: none;
     }
 
     .perfil{
@@ -430,16 +436,12 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
     }
     /* About_me */
 
     section.about_me_bg{
         padding: 0px;
-    }
-
-    .about_me{
-        width: 100%;
     }
 
     div.center_about_me{
@@ -448,7 +450,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 25%;
     }
 
     .about_me h1{
@@ -456,11 +458,14 @@ footer {
     }
 
     .about_me p{
-        width: 100%;
         padding-bottom: 10px;
+        text-align: justify;
     }
 
-}
+    .about_me_image img{
+        display: none;     
+    }
+
 
 @media screen and (max-width: 768px) {
 
@@ -507,17 +512,13 @@ footer {
         padding: 0px;
     }
 
-    .perfil{
-        width: 100%;
-    }
-
    div.center_basic_info{
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
     }
     /* About_me */
 
@@ -525,9 +526,6 @@ footer {
         padding: 0px;
     }
 
-    .about_me{
-        width: 100%;
-    }
 
     div.center_about_me{
         display: flex;
@@ -535,9 +533,12 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 25%;
     }
 
+    .about_me {
+        width: 100%;
+    }
     .about_me p{
         width: 100%;
         padding-bottom: 10px;
@@ -550,14 +551,11 @@ footer {
     nav.lista_wrap{
         display: flex;
         flex-wrap: wrap;
-        max-width: 120px;
     }
 
     .lista_wrap li{
        padding: 10px 10px 5px 10px;
+       width: 31%;
     }
-
-    .center_lista_contatos{
-        padding: 0px 30%;
-    }
+    
 }
