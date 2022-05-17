@@ -34,6 +34,11 @@ header{
     font-weight: 700;
 }
 
+.logo p:hover{
+    font-size: 30px;
+    transition: 1s;
+}
+
 /*-- Start List --*/
 
 .list_header {
@@ -91,10 +96,15 @@ section.basic_info_bg{
 
 .perfil_image{
  width: 50%;
+ margin-bottom: -5px;
 }
 
 .perfil_image img{
-    margin-bottom: -5px;
+    position: relative;
+    margin-top: 20px;
+    width: 140%;
+    left: 20px;
+    
 }
 
 .center_basic_info{
@@ -139,16 +149,21 @@ section.about_me_bg {
 }
 
 .about_me_image{
-    width:  50%;
-    margin-top: -20%;
+    margin-top: 20px;
     margin-bottom: -5px;
+}
+
+.about_me_image img{
+    position: relative;
+    width: 100%;
+    left: 42%;
 }
 
 
 .about_me h1{
     color: white;
     font-size: 34px;
-    padding-top: 30%;
+    padding-top: 20%;
     padding-bottom: 5%;
   
 }
@@ -317,19 +332,27 @@ nav.lista_wrap{
 }
 
 .lista_contatos i{
-    padding-right: 5px;
+    padding-right: 15px;
     padding-bottom: 15px;
 }
 
 .lista_contatos a{
     color: white;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .center_lista_contatos{
     max-width: 600px;
     margin: 0 auto;
  }
+
+.lista_contatos li:hover{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: 1s;
+
+}
 
 /* section.contact_bg form{
     width: 100%;
@@ -450,7 +473,6 @@ footer p{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-bottom: 25%;
     }
 
     .about_me h1{
@@ -533,15 +555,15 @@ footer p{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-bottom: 25%;
-    }
-
-    .about_me {
-        width: 100%;
+    }  
     }
     .about_me p{
         width: 100%;
         padding-bottom: 10px;
+    }
+
+    .about_me {
+        width: 80%;
     }
 
     .course_wrap li{
@@ -554,8 +576,8 @@ footer p{
     }
 
     .lista_wrap li{
-       padding: 10px 10px 5px 10px;
-       width: 31%;
+       padding: 10px 10px 5px 50px;
+       width: 30%;
     }
     
 }
